@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+
+
+        <title>Sean virtuele rubiks cube</title>
+
+        <style>
+            #scrambletype {
+                opacity: 0; /* Make the button transparent */
+                position: absolute; /* Take it out of the layout flow */
+                width: 0; /* Optionally set width to 0 to hide it */
+                height: 0; /* Optionally set height to 0 to hide it */
+                overflow: hidden; /* Hide any overflowing content */
+            }
+        </style>
+    </head>
+    <body>
+        
+        <style>
+            /* Style for the link */
+            .fancy-link {
+              color: hsl(0, 86%, 31%); /* Blue color */
+              text-decoration: none; /* Remove underline */
+              font-family: Arial, sans-serif; /* Specify font */
+              font-size: 18px; /* Specify font size */
+              font-weight: bold; /* Specify font weight */
+              border: 2px solid #910909; /* Add border */
+              padding: 10px 20px; /* Add padding */
+              border-radius: 5px; /* Add border radius */
+              transition: all 0.3s ease; /* Add smooth transition */
+            }
+          
+            /* Style for the link hover */
+            .fancy-link:hover {
+              background-color: #bd0000; /* Change background color on hover */
+              color: #ffffff; /* Change text color on hover */
+            }
+          </style>
+
+        <a href="https://seanzwetsloot.github.io/VirtueelRB/" target="_blank" class="fancy-link">Virtuele Rubiks cube trainer</a>
+
+
+        <style>
+            body {
+                background: rgb(0, 0, 0);
+                font-family: Arial;
+                color: white;
+            }
+            p {
+                font-family: Arial;
+                font-size: 15px;
+                color: white;
+            }
+
+            .middle {
+                text-align: center;
+            }
+            a:link {
+                color: cornflowerblue
+            }
+            a:visited {
+                color: darkslateblue
+            }
+        </style>
+
+        <div class="middle">
+            
+            <br><br>
+            <canvas id="cube" width="250" height="300" ></canvas>
+            <br>
+            <br>
+
+            <script src="js/alg_jison.js"></script>
+            <script src="js/alg.js"></script>
+
+            <script src="js/scramble_333_edit.js"></script>
+
+            <script src="js/cube.js"></script>
+            <script src="js/solve.js"></script>
+
+            <script src="js/keypress.js"></script>
+            <script src="js/fullzbll.js"></script>
+
+            <script src="js/RubiksCube.js"></script>
+
+
+            <textarea rows="9" cols="50" id="movesTextArea" placeholder="hier staan alle draaien die je hebt gedaan/doet" onfocus="window.listener.stop_listening();" onblur="window.listener.listen();"></textarea>
+
+            <br>
+            <select id="scrambletype">
+                <option>normal</option>
+            </select>
+
+           
+            <br>
+            <p id="moveCounter"></p> 
+            <p id=""> </p>
+            <p id=""></p>
+            <a href="" id = "acn" target=""></a><br>
+
+
+
+
+             <br>
+            <a href="" id = "JonatanCFOP" target="_blank"></a>
+            <a href="" id = "JonatanRoux" target="_blank"></a>
+            <a href="" id = "JonatanZZ" target="_blank"></a><br>
+            <h2>ff snel uitleggen</h2> 
+
+            spatie: de zooi word door elkaar gegooid<br>
+            Esc: Als je er niet meer uitkomt<br>
+            De toetsen die je moet gebruiken vind je hier: <a href="http://www.ryanheise.com/cube/speed.html">zeker niet hier</a>. ' is M and [ is M'
+            <br>
+
+        </div>
+
+    </body>
+</html>
